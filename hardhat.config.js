@@ -1,6 +1,6 @@
 require("@nomiclabs/hardhat-waffle"); 
-const  privateKey ='d540780e2bca40d0dbb47f7023b56982606e3c65ff7ffbd56f7887b07f87bc72';
-const ALCHEMY_API_KEY = "pqr-VAfSii011IkFlqrZTxCgzK5fWegs";
+const  privateKey = process.env.REACT_APP_POLYGON_PRIVATE_KEY;
+const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
 module.exports = {
   solidity: "0.8.4",
